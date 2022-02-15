@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Popovers</h1>
+    <div class="container">
+      <h4>Normal popover</h4>
+      <button
+        type="button"
+        class="btn btn-lg btn-danger"
+        id="welcome"
+        data-bs-toggle="popover"
+        title="Popover title"
+        data-bs-content="And here's some amazing content. It's very engaging. Right?"
+      >
+        Click to toggle popover
+      </button>
+    </div>
+    <div class="container">
+      <h4>Directions of popover</h4>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-placement="top"
+        data-bs-content="Top popover"
+      >
+        Popover on top
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-placement="right"
+        data-bs-content="Right popover"
+      >
+        Popover on right
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-placement="bottom"
+        data-bs-content="Bottom popover"
+      >
+        Popover on bottom
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-container="body"
+        data-bs-toggle="popover"
+        data-bs-placement="left"
+        data-bs-content="Left popover"
+      >
+        Popover on left
+      </button>
+    </div>
+    <div class="container">
+      <h4>Dismissible popover</h4>
+      <a
+        tabindex="0"
+        class="btn btn-lg btn-danger"
+        role="button"
+        data-bs-toggle="popover"
+        data-bs-trigger="focus"
+        title="Dismissible popover"
+        data-bs-content="And here's some amazing content. It's very engaging. Right?"
+        >Dismissible popover</a
+      >
+    </div>
+    <div class="container">
+      <h4>Disabled button in popover</h4>
+      <span
+        class="d-inline-block"
+        tabindex="0"
+        data-bs-toggle="popover"
+        data-bs-trigger="hover focus"
+        data-bs-content="Disabled popover"
+      >
+        <button class="btn btn-primary" type="button" disabled>
+          Disabled button
+        </button>
+      </span>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-bs-toggle="popover"]').popover();
+      });
+    </script>
+  </body>
+</html>
