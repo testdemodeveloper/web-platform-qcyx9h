@@ -1,10 +1,10 @@
-.bt2{
+.dropd .bt2{
   left:10px;
 }
-h2{
+.dropd h2{
   color:brown;
 }
-h1{
+.dropd h1{
   text-align: center;
   color: crimson;
 }
